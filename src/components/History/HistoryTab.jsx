@@ -1,4 +1,3 @@
-// src/components/History/HistoryTab.jsx:path/to/file
 import React, { useEffect, useState } from 'react';
 import { db } from '../../firebase/config';
 import { collection, query, where, onSnapshot, orderBy, deleteDoc, doc, getDocs } from "firebase/firestore";

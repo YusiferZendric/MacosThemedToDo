@@ -1,4 +1,3 @@
-// src/components/Todo/TodoItem.jsx:path/to/file
 import React, { useState } from 'react';
 import { FiCheck, FiRotateCcw, FiPlus, FiTrash2, FiEdit2 } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';

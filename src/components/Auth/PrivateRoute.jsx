@@ -1,4 +1,3 @@
-// src/components/Auth/PrivateRoute.jsx:path/to/file
 import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';

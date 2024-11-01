@@ -1,4 +1,3 @@
-// src/components/Todo/AddTodo.jsx:path/to/file
 import React, { useState } from 'react';
 import { db } from '../../firebase/config';
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";

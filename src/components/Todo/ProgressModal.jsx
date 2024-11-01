@@ -1,4 +1,3 @@
-// src/components/Todo/ProgressModal.jsx:path/to/file
 import React, { useState } from 'react';
 import { db } from '../../firebase/config';
 import { doc, updateDoc, getDoc, addDoc, collection } from "firebase/firestore";

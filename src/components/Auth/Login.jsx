@@ -1,4 +1,3 @@
-// src/components/Auth/Login.jsx:path/to/file
 import React, { useState } from 'react';
 import { auth, provider } from '../../firebase/config';
 import { signInWithEmailAndPassword, signInWithPopup, sendEmailVerification } from 'firebase/auth';

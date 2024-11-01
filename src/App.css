@@ -145,7 +145,6 @@ background: linear-gradient(
 @apply bg-blue-600/80 text-white;
 }
 
-/* Specific month/year view styles */
 .react-calendar__year-view__months__month,
 .react-calendar__decade-view__years__year,
 .react-calendar__century-view__decades__decade {
@@ -158,12 +157,10 @@ background: linear-gradient(
 @apply bg-dark-hover/50 text-white;
 }
 
-/* Navigation arrow colors */
 .react-calendar__navigation__arrow {
 @apply text-gray-400 hover:text-white;
 }
 
-/* Navigation label (month/year) */
 .react-calendar__navigation__label {
 @apply text-gray-300 hover:text-white;
 }

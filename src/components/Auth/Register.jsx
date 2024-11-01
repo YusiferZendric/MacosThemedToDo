@@ -1,4 +1,3 @@
-// src/components/Auth/Register.jsx:path/to/file
 import React, { useState, useEffect } from 'react';
 import { auth, provider, db } from '../../firebase/config';
 
