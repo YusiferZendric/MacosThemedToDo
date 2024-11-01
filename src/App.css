@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    cursor: url('/public/cursor.svg'), auto;
+}
+
+.grabbing {
+    cursor: url('/public/closedhand.svg'), auto;
+}
+
+.grab {
+    cursor: url('/public/openhand.svg'), auto;
+}
+
+.pointing {
+    cursor: url('/public/pointinghand.svg'), auto;
+}
+
+button,
+a {
+    @apply pointing;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('/public/SF-Pro-Display-Regular.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('/public/SF-Pro-Display-Bold.OTF') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'SF Pro', sans-serif;
+}
+
+body {
+    @apply bg-dark-bg text-white antialiased;
+  }
+  
+::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+}
+
+::-webkit-scrollbar-track {
+@apply bg-dark-bg;
+}
+
+::-webkit-scrollbar-thumb {
+@apply bg-dark-hover rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+@apply bg-dark-active;
+}
+
+.noise {
+background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+opacity: 0.05;
+pointer-events: none;
+}
+.react-calendar {
+@apply bg-dark-bg/80 border-dark-border rounded-xl border p-4 text-white shadow-lg backdrop-blur-sm;
+background: linear-gradient(
+    145deg,
+    rgba(26, 26, 26, 0.9) 0%,
+    rgba(26, 26, 26, 0.8) 100%
+);
+}
+
+.react-calendar__navigation {
+@apply mb-4;
+}
+
+.react-calendar__navigation button {
+@apply text-gray-300 min-w-[44px] bg-transparent rounded-lg transition-all duration-200;
+}
+
+.react-calendar__navigation button:enabled:hover {
+@apply bg-dark-hover/50 text-white;
+}
+
+.react-calendar__navigation button:enabled:focus {
+@apply bg-dark-hover/70 text-white;
+}
+
+.react-calendar__navigation button:disabled {
+@apply text-gray-600 cursor-not-allowed;
+}
+
+.react-calendar__month-view__weekdays {
+@apply text-gray-400 text-xs uppercase;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+@apply text-center py-2;
+}
+
+.react-calendar__month-view__days__day {
+@apply rounded-lg transition-all duration-200 text-gray-300;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+@apply text-gray-600;
+}
+
+.react-calendar__tile {
+@apply text-gray-300 p-2 text-sm rounded-lg transition-all duration-200;
+}
+
+.react-calendar__tile:enabled:hover {
+@apply bg-dark-hover/50 text-white;
+}
+
+.react-calendar__tile:enabled:focus {
+@apply bg-dark-hover/70 text-white;
+}
+
+.react-calendar__tile:disabled {
+@apply text-gray-600 cursor-not-allowed;
+@apply hover:bg-transparent;
+}
+
+.react-calendar__tile--now {
+@apply bg-blue-500/10 text-blue-400;
+}
+
+.react-calendar__tile--now:enabled:hover {
+@apply bg-blue-500/20 text-blue-300;
+}
+
+.react-calendar__tile--active {
+@apply bg-blue-500/80 text-white;
+}
+
+.react-calendar__tile--active:enabled:hover {
+@apply bg-blue-600/80 text-white;
+}
+
+/* Specific month/year view styles */
+.react-calendar__year-view__months__month,
+.react-calendar__decade-view__years__year,
+.react-calendar__century-view__decades__decade {
+@apply text-gray-300;
+}
+
+.react-calendar__year-view__months__month:enabled:hover,
+.react-calendar__decade-view__years__year:enabled:hover,
+.react-calendar__century-view__decades__decade:enabled:hover {
+@apply bg-dark-hover/50 text-white;
+}
+
+/* Navigation arrow colors */
+.react-calendar__navigation__arrow {
+@apply text-gray-400 hover:text-white;
+}
+
+/* Navigation label (month/year) */
+.react-calendar__navigation__label {
+@apply text-gray-300 hover:text-white;
+}
